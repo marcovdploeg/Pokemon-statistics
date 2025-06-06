@@ -11,8 +11,11 @@ The 'model XGBoost fractions' file trains the model with extra features and meth
 
 Later an extra dataset with an extra Generation of Pokemon was found, which was then also used to try and improve the model.
 The data exploration and model training notebooks for this data are located in the 'expanded_data' directory.
+This model got the best result with a root mean square error of about 22 for predicting the Attack stat. 
+As the median Attack is 75, this shows the predictions are not very precise, but the features do hold some predictive power.
 
 Applied methods in this script are: manipulating data with numpy and pandas, visualizing data with matplotlib and seaborn, statistical tests with the Mann-Whitney U test, fitting with scipy (curve_fit), machine learning with XGBoost, feature engineering, and hyperparameter optimization (with GridSearchCV).
 
 Data at: https://www.kaggle.com/datasets/abcsds/pokemon
+
 Expanded data at: https://www.kaggle.com/datasets/rounakbanik/pokemon
